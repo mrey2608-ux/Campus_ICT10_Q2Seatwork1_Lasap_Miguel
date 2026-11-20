@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Element Archive</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.3.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.3.1/core.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <p class="subtitle">PEA BRAIN CLUB · SCIENTIFIC DIVISION</p>
+        <h1>ELEMENT ARCHIVE</h1>
+        <p class="description">A Reference to the Non-Metal Elements</p>
+    </header>
+
+    <main class="container">
+
+        <h2>Element Identification</h2>
+
+        <p class="instructions">
+            Enter the chemical symbol of a non-metal element
+            to retrieve its scientific information.
+        </p>
+
+        <input
+            type="text"
+            id="element"
+            placeholder="Enter symbol (e.g. O)"
+        >
+
+        <button py-click="candidate_checker">
+            SEARCH ELEMENT
+        </button>
+
+        <div id="result">
+            Awaiting element identification...
+        </div>
+
+    </main>
+
+    <footer>
+        KNOWLEDGE THROUGH DISCOVERY
+    </footer>
+
+    <script type="py" src="./Main.py"></script>
+
+</body>
+</html>
